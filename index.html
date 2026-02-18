@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skycast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/logo-black.png" style="height: 90px; width: 90px" alt="" />
+        <div class="search-container">
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Enter City..."
+              spellcheck="false"
+            />
+            <span class="search-icon">
+              <i class="search fa fa-search"></i>
+            </span>
+            <span class="clear-icon" id="clear-btn">
+              <i class="clear fa fa-times"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="nav">
+          &nbsp;&nbsp;
+          <a href="hourly.html" style="color: #090909" >Hourly</a>
+          &nbsp;&nbsp;
+          <a href="daily.html" style="color: #090909">Daily</a>
+          &nbsp;&nbsp;
+          <a href="weekly.html" style="color: #090909"></a>
+          &nbsp;&nbsp;
+          <a href="monthly.html" style="color: #090909"></a>
+          &nbsp;&nbsp;
+        </div>
+
+ 
+        <label>
+          <input class="checkbox" type="checkbox" />
+          <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+          </div>
+          <div class="slide">
+            <h1 id="menu">MENU</h1>
+            <ul>
+              <li>
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="about.html"><i class="fas fa-info"></i>About</a>
+              </li>
+              <li>
+                <a href="contact.html"><i class="fas fa-phone"></i>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </label>
+      </div>
+    </header>
+    <div class="current">
+      <h1 id="degree">20°C</h1>
+      <h4 id="description">Mostly Cloudy</h4>
+      <br />
+      <h6 id="Humidity">
+        Humidity:89% &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Wind Speed:3km/h
+      </h6>
+      <img class="weather-icon" src="images/clouds.png" alt="" />
+    </div>
+    <div class="card" id="air">
+      <h3>Air Quality index</h3>
+      <h3 id="airno">57</h3>
+      <br />
+      <p>
+        Moderate Air quality is acceptable; however, for some pollutants there
+        may be a moderate health concern for a very small number of people who
+        are unusually sensitive to air pollution.
+      </p>
+      <br />
+      <input type="button" id="airbtn" value="See Details" onclick="window.location.href='air-index.html';">
+    </div>
+    <card class="radar">
+      <h2 style="position: center;">Radar</h2>
+      <img src="images/Relief.png" style="height: 440px; width: 380px; margin-top: 10px;" alt="">
+      <input type="button" id="radarbtn" value="See More Details" onclick="window.location.href='radar.html';">
+    </card>
+
+    <div class="table-hourly">
+      <div class="row1">
+        <div class="time1">Morning</div>
+        <div class="temp1">22°</div>
+        <img class="icon1" src="/images/clear.png" alt="Clear" />
+        <div class="wind1">5&nbsp;km/h</div>
+        <div class="precipitation1">1%</div>
+      </div>
+      <div class="row2">
+        <div class="time2">Afternoon</div>
+        <div class="temp2">25°</div>
+        <img
+          class="icon2"
+          src="/images/drizzle.png"
+          alt="Partly Cloudy with Showers"
+        />
+        <div class="wind2">11&nbsp;km/h</div>
+        <div class="precipitation2">33%</div>
+      </div>
+      <div class="row3">
+        <div class="time3">Evening</div>
+        <div class="temp3">19°</div>
+        <img class="icon3" src="/images/clouds.png" alt="Partly Cloudy Night" />
+        <div class="wind3">15&nbsp;km/h</div>
+        <div class="precipitation3">3%</div>
+      </div>
+      <div class="row4">
+        <div class="time4">Overnight</div>
+        <div class="temp4">15°</div>
+        <img class="icon4" src="/images/clouds.png" alt="Partly Cloudy Night" />
+        <div class="wind4">9&nbsp;km/h</div>
+        <div class="precipitation4">6%</div>
+      </div>
+    </div>
+    <div class="table-daily">
+      <div class="row11">
+        <div class="time11">Monday</div>
+        <div class="temp11">22°</div>
+        <img class="icon11" src="/images/clear.png" alt="Clear" />
+        <div class="wind11">5&nbsp;km/h</div>
+        <div class="precipitation11">1%</div>
+      </div>
+      <div class="row22">
+        <div class="time22">Tuesday</div>
+        <div class="temp22">25°</div>
+        <img
+          class="icon22"
+          src="/images/drizzle.png"
+          alt="Partly Cloudy with Showers"
+        />
+        <div class="wind22">11&nbsp;km/h</div>
+        <div class="precipitation22">33%</div>
+      </div>
+      <div class="row33">
+        <div class="time33">Wednesday</div>
+        <div class="temp33">19°</div>
+        <img
+          class="icon33"
+          src="/images/clouds.png"
+          alt="Partly Cloudy Night"
+        />
+        <div class="wind33">15&nbsp;km/h</div>
+        <div class="precipitation33">3%</div>
+      </div>
+      <div class="row44">
+        <div class="time44">Thursday</div>
+        <div class="temp44">15°</div>
+        <img
+          class="icon44"
+          src="/images/clouds.png"
+          alt="Partly Cloudy Night"
+        />
+        <div class="wind44">9&nbsp;km/h</div>
+        <div class="precipitation44">6%</div>
+      </div>
+      <div class="row55">
+        <div class="time55">Friday</div>
+        <div class="temp55">15°</div>
+        <img
+          class="icon55"
+          src="/images/clouds.png"
+          alt="Partly Cloudy Night"
+        />
+        <div class="wind55">9&nbsp;km/h</div>
+        <div class="precipitation55">6%</div>
+      </div>
+      <div class="row66">
+        <div class="time66">Saturday</div>
+        <div class="temp66">15°</div>
+        <img
+          class="icon66"
+          src="/images/clouds.png"
+          alt="Partly Cloudy Night"
+        />
+        <div class="wind66">9&nbsp;km/h</div>
+        <div class="precipitation66">6%</div>
+      </div>
+      <div class="row77">
+        <div class="time77">Sunday</div>
+        <div class="temp77">15°</div>
+        <img
+          class="icon77"
+          src="/images/clouds.png"
+          alt="Partly Cloudy Night"
+        />
+        <div class="wind77">9&nbsp;km/h</div>
+        <div class="precipitation77">6%</div>
+      </div>
+    </div>
+    <footer>
+      <section class="top">
+        <img src="images/logo-white.png" alt="" />
+        <div class="links">
+
+          <div class="links-column">
+            <h2>Learn More</h2>
+            <a href="about.html" style="text-decoration: none; color: rgb(155, 155, 155)"
+              >About Skycast</a
+            >
+            <a href="privacy.html" style="text-decoration: none; color: rgb(155, 155, 155)"
+              >PRIVACY</a
+            >
+            <a href="terms.html" style="text-decoration: none; color: rgb(155, 155, 155)"
+              >TERMS & CONDITIONS</a
+            >
+            <a href="#" style="text-decoration: none; color: rgb(155, 155, 155)"
+              ></a
+            >
+          
+            <!-- more links -->
+          </div>
+          <div class="links-column social-column">
+            <h2>Social Media</h2>
+            <p id="pr">FOLLOW US ON</p>
+            <div class="socials">
+              <a
+                href="https://instagram.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://github.com/Ali-Abdy"
+                target="_blank"
+                style="text-decoration: none"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <!-- more social icons -->
+            </div>
+          </div>
+          <div class="payment">
+            <h2 style="justify-content: center;">Payment</h2>
+            <p id="support">Support Us here</p>
+              
+              <script src="https://www.paypal.com/sdk/js?client-id=AU72UJeWHCvR5TWGqXDQjufD9kL2oqg_zHOGYhJjc2ien3HwviVFWYUPKiUTyg8SgGBDkM2dUKuMC6XX&currency=USD"></script>
+
+              
+              <div id="paypal-button-container"></div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="copyright">
+          &copy; 2025 Ali Abdi's Website. All rights reserved.
+        </div>
+        <div class="legal">
+          <a href="contact.html" style="color: rgb(155, 155, 155); text-decoration: none"
+            >Contact</a
+          >
+          <a href="privacy.html" style="color: rgb(155, 155, 155); text-decoration: none"
+            >Privacy</a
+          >
+          <a href="terms.html" style="color: rgb(155, 155, 155); text-decoration: none"
+            >Terms</a
+          >
+        </div>
+      </section>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
